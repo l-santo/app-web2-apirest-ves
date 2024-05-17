@@ -8,13 +8,13 @@ node{
         bat 'npm install'
     }
 
-    stage('Construir aplicación'){
+    stage('Construir aplicacion'){
         bat 'npm run build'
     }
 
-  /*  stage('Copiar al servidor'){
-        bat 'xcopy '
+    stage('Copiar al servidor'){
+        bat 'xcopy C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Pipeline Angular\\dist  C:\\servidor /E /I /Y'
     }
-    */
+    
 
 }

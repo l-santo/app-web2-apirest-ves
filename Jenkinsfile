@@ -13,7 +13,7 @@ node{
     }
 
     stage('Copiar al servidor'){
-        bat "xcopy 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Pipeline Angular\\dist'  C:\\servidor /E /I /Y"
+        bat 'xcopy C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Pipeline_Angular\\dist  C:\\servidor /E /I /Y'
     }
     
 
